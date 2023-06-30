@@ -107,6 +107,10 @@ outline: none;
 box-shadow: none;
 }
 
+.nav-actual{
+    background-color: darkgreen;
+    border-radius: 20%;
+}
 
 main{
     display: flex;
