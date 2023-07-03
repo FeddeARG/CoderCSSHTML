@@ -97,6 +97,11 @@ header{
                 .listnav a{
                     color:#f0ffff;
                 }
+                .listnav a:hover{
+                    background-color:chartreuse;
+                    color: black;
+                    border-radius: 20%;
+                }
                 .buscador{
                     width: 30%;
                 }
@@ -349,7 +354,12 @@ textarea{
                 letter-spacing: 5px;
             }
 
-
+main p::first-letter{
+    font-size: 1.3em;
+}
+main p{
+    font-size: 1em;
+}
 
 /* Página de Seeds *//* Página de Seeds *//* Página de Seeds *//* Página de Seeds *//* Página de Seeds *//* Página de Seeds */
 
@@ -483,12 +493,8 @@ textarea{
 /* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos */
 
 
-main p::first-letter{
-    font-size: 1.3em;
-}
-main p{
-    font-size: 1em;
-}
+
+
 
 
 
