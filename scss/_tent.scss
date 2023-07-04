@@ -1,0 +1,77 @@
+
+//tent
+
+.tentGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "tent1 tent2 tent3";
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    @media(width<1024px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tent1" 
+        "tent2" 
+        "tent3";
+        row-gap: 30px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .tent1{
+        grid-area: tent1; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .tent2{
+        grid-area: tent2; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .tent3{
+        grid-area: tent3; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+}
+
+.tent{
+    text-align: center;
+    margin: auto;
+    figure{
+        max-height: 100px;
+    }
+    img{
+        align-self: center;
+        width: 100%;
+        object-fit: scale-down;
+    }
+    figcaption{
+        font-family: 'Kanit', sans-serif;
+        font-weight: $textLg;
+        font-style: $textIt;
+        color: $gray;
+        width: 100%;
+        span{
+            font-family: $secText;
+            font-weight: $textBdr;
+            font-style: $textIt;
+            color: $white;
+        }
+    }
+}

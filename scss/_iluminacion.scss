@@ -1,0 +1,141 @@
+
+// iluminación
+
+
+.mainIlum{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    width: 80%;
+    color: $white;
+    font-size: $textM3;
+    .divIlum1{
+        text-align: center;
+        font-size: $textM5;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .divIlum2{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        row-gap: 10vh;
+        grid-template-areas: 
+        "imgIlum1 txtIlum1"
+        "txtIlum2 imgIlum2"
+        "imgIlum3 txtIlum3";
+        img{
+            width: 300px;
+            height: 150px;
+        }
+        @media(width<1024px){
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr;
+            margin-bottom: 40px;
+            gap: 10px;
+            grid-template-areas: 
+            "imgIlum1"
+            "txtIlum1"
+            "imgIlum2" 
+            "txtIlum2"
+            "imgIlum3" 
+            "txtIlum3";   
+        }
+        .imgIlum1{
+            grid-area: imgIlum1;
+            display: flex;
+            justify-content: center;
+            img{
+                object-fit: cover;
+            }
+        }
+        .imgIlum2{
+            grid-area: imgIlum2;
+            display: flex;
+            justify-content: center;
+            img{
+                object-fit: fill;
+            }
+        }
+        .imgIlum3{
+            grid-area: imgIlum3;
+            display: flex;
+            justify-content: center;
+            img{
+                object-fit: cover;
+            }
+        }
+        .txtIlum1{
+            grid-area: txtIlum1;
+            transition: 0.8s;
+            padding-bottom: 20px;
+            &:hover{
+                color: $pink;
+                text-shadow: 0 0 10px $pink,
+                            0 0 20px $pink,
+                            0 0 40px $pink,
+                            0 0 80px $pink,
+                            0 0 120px $pink,
+                            0 0 160px $pink;
+                background-image: $dark;
+                transition: 0.2s;
+                font-size: $textM2;
+                padding: 3vh;
+                letter-spacing: 5px;
+            }
+        }
+        .txtIlum2{
+            grid-area: txtIlum2;
+            transition: 0.8s;
+            padding-bottom: 20px;
+            &:hover{
+                color: $yellow;
+                text-shadow: 0 0 10px $yellow,
+                            0 0 20px $yellow,
+                            0 0 40px $yellow,
+                            0 0 80px $yellow,
+                            0 0 120px $yellow,
+                            0 0 160px $yellow;
+                background-image: $dark;
+                transition: 0.2s;
+                font-size: $textM2;
+                padding: 3vh;
+                letter-spacing: 5px;
+            }
+        }
+        .txtIlum3{
+            grid-area: txtIlum3;
+            transition: 0.8s;
+            padding-bottom: 20px;
+            &:hover{
+                color: $white;
+                text-shadow: 0 0 10px $white,
+                            0 0 20px $white,
+                            0 0 40px $white,
+                            0 0 80px $white,
+                            0 0 120px $white,
+                            0 0 160px $white;
+                background-image: $dark;
+                font-size: $textM2;
+                transition: 0.2s;
+                padding: 3vh;
+                letter-spacing: 5px;
+            }
+        }
+    }
+} 
+
+        
+
+            
+
+            
+
+
+            

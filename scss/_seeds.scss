@@ -1,0 +1,139 @@
+
+//Seeds
+
+.gridSeeds{
+    display: grid;
+    row-gap: 20px;
+    column-gap: 50px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "seed1 seed2"
+    "seed3 seed4"
+    "seed5 seed6"
+    "seed7 seed8";
+    @media(width<1024px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "seed1"
+        "seed2"
+        "seed3" 
+        "seed4"
+        "seed5" 
+        "seed6"
+        "seed7" 
+        "seed8";
+    }
+    div{
+        display: flex;
+        align-items: row;
+        justify-content: center;
+    }
+    img{
+        object-fit: fill;
+        height: 300px;
+    }
+    figcaption{
+        font-size: $textXl;
+    }
+    .seed1{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed1;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed2{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed2;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed3{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed3;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed4{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed4;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed5{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed5;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed6{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed6;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed7{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed7;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+    .seed8{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        grid-area: seed8;
+        border: solid $gray;
+        color: $white;
+        justify-content: end;
+        align-items: center;
+        background-color: $dark;
+        border-radius: 10%;
+    }
+}
+

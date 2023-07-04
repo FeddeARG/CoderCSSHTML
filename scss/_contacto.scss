@@ -1,0 +1,33 @@
+
+// contacto
+
+
+.secContacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .divContacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 80%;
+        color: $white; 
+        padding-top: 10px;
+        padding-bottom: 5px;
+        button{
+            text-align: center;
+            width: 10%;
+            border-radius: 10%;
+            border: none;
+            background-color: $gray;
+        }
+        h2{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
