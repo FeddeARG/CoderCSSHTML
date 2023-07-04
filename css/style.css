@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* A TODO */
 
@@ -60,7 +60,7 @@ header{
             }
                 .horarios p{
                 padding-left: 10px;
-                font-size: 1em;
+                font-weight: 400;
                 }
             .divRedes{
             display: flex;
@@ -95,16 +95,24 @@ header{
                     flex-direction: column;
                     align-items: start;
                     width: 30%;
+                    gap: 5px;
                 }
                 .listnav a{
-                    font-family: 'Raleway', sans-serif;
+                    font-family: 'Roboto', sans-serif;
                     font-weight: 500;
+                    letter-spacing: 1px;
                     color:#f0ffff;
                 }
                 .listnav a:hover{
-                    background-color:chartreuse;
-                    color: black;
-                    border-radius: 20%;
+                    background-color:rgb(44, 105, 43);
+                    color: rgb(41, 37, 37);
+                    border-radius: 30%;
+                    text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 40px #fff,
+                    0 0 80px #fff,
+                    0 0 120px #fff,
+                    0 0 160px #fff;   
                 }
                 .buscador{
                     width: 30%;
@@ -117,7 +125,7 @@ box-shadow: none;
 }
 
 .nav-actual{
-    background-color: darkgreen;
+    background-color: rgb(10, 58, 10);
     border-radius: 20%;
 }
 
@@ -125,6 +133,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 40%;
     min-height: 65vh;
@@ -494,114 +503,71 @@ main p{
 
 
 
-/* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos *//* Página de Sustratos */
+/* Página de tent *//* Página de tent *//* Página de tent *//* Página de tent *//* Página de tent */
 
-figure.sustrato {
-    font-family: 'Raleway', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    min-width: 220px;
-    max-width: 310px;
-    max-height: 310px;
-    width: 100%;
-    overflow: hidden;
+.tentGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "tent1 tent2 tent3";
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.tent{
     text-align: center;
-    background: transparent;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  }
-  
-  figure.sustrato * {
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-  }
-  
-  figure.sustrato img {
-    opacity: 0.25;
-    max-width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  
-  figure.sustrato figcaption {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    right: 30px;
-    -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
-    transform: rotate(0deg) translateY(-50%) scale(1);
-    -webkit-transform-origin: center 0;
-    transform-origin: center 0;
-  }
-  
-  figure.sustrato figcaption h2 {
-    top: 50%;
-    letter-spacing: -1px;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 10px 0;
-    margin: 0;
-    font-weight: 400;
-  }
-  
-  figure.sustrato figcaption h2 span {
-    font-weight: 800;
-  }
-  
-  figure.sustrato figcaption:before,
-  figure.sustrato figcaption:after {
-    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+}
+.tent figure{
+    max-height: 100px;
+}
+.tent img{
+    align-self: center;
     width: 100%;
-    height: 2px;
-    position: absolute;
-    content: "";
-    display: block;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-  }
-  
-  figure.sustrato figcaption:before {
-    left: 0;
-    top: 0;
-  }
-  
-  figure.sustrato figcaption:after {
-    bottom: 0;
-    right: 0;
-  }
-  
+    object-fit: scale-down;
+}
 
-  
-  figure.sustrato a {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-  }
-  
-  figure.sostrato:hover img,
-  figure.sustrato.hover img {
-    opacity: 1;
-  }
-  
-  figure.sustrato:hover figcaption,
-  figure.sustrato.hover figcaption {
-    -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
-    transform: rotate(-45deg) translateY(-50%) scale(0.9);
-  }
-  
-  figure.sustrato:hover figcaption:before,
-  figure.sustrato.hover figcaption:before,
-  figure.sustrato:hover figcaption:after,
-  figure.sustrato.hover figcaption:after {
-    width: 200%;
-  }
+.tent figcaption span{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #f0ffff;
+}
 
+.tent figcaption{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #a9a9b6;
+    width: 100%;
+}
 
-
-
+.tent1{
+    grid-area: tent1; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.tent2{
+    grid-area: tent2; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.tent3{
+    grid-area: tent3; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+}
 
 /* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS *//* BEACKPOINTS */
 
