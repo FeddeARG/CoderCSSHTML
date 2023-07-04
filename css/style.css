@@ -600,4 +600,18 @@ main p{
     "seed7" 
     "seed8";
     }
+    .tentGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "tent1" 
+        "tent2" 
+        "tent3";
+        row-gap: 30px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 }
