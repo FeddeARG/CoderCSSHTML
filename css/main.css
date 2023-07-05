@@ -1,6 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/futurouso/wp4788976.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40%;
+  min-height: 65vh;
+  padding-top: 20px;
+}
+body main p {
+  font-size: 1em;
+}
+body main p:first-letter {
+  font-size: 1.3em;
+}
+body main textarea {
+  color: #f0ffff;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -261,7 +294,7 @@ footer .secFooter1 .mPago {
 
 .tentGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-template-areas: "tent1 tent2 tent3";
   width: 80%;
@@ -272,7 +305,7 @@ footer .secFooter1 .mPago {
   .tentGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "tent1" "tent2" "tent3";
     row-gap: 30px;
     width: 80%;
@@ -338,14 +371,14 @@ footer .secFooter1 .mPago {
   column-gap: 50px;
   margin-bottom: 10px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "seed1 seed2" "seed3 seed4" "seed5 seed6" "seed7 seed8";
 }
 @media (width < 1024px) {
   .gridSeeds {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "seed1" "seed2" "seed3" "seed4" "seed5" "seed6" "seed7" "seed8";
   }
 }
@@ -485,39 +518,6 @@ footer .secFooter1 .mPago {
 .secContacto .divContacto h2 {
   margin-top: 10px;
   margin-bottom: 5px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  list-style-type: none;
-  box-sizing: border-box;
-}
-
-body {
-  background-image: url(../img/futurouso/wp4788976.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 40%;
-  min-height: 65vh;
-  padding-top: 20px;
-}
-body main p {
-  font-size: 1em;
-}
-body main p:first-letter {
-  font-size: 1.3em;
-}
-body main textarea {
-  color: #f0ffff;
 }
 
 /*# sourceMappingURL=main.css.map */
