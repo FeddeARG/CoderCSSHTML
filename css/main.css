@@ -346,7 +346,8 @@ footer .secFooter1 .mPago {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "seed1" "seed2" "seed3" "seed4" "seed5" "seed6" "seed7" "seed8";
+    grid-template-areas: 
+    "seed1" "seed2" "seed3" "seed4" "seed5" "seed6" "seed7" "seed8";
   }
 }
 .gridSeeds div {
@@ -520,4 +521,8 @@ body main textarea {
   color: #f0ffff;
 }
 
+
 /*# sourceMappingURL=main.css.map */
+
+
+

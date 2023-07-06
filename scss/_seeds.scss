@@ -16,7 +16,7 @@
     @media(width<1024px){
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
         grid-template-areas: 
         "seed1"
         "seed2"
@@ -137,3 +137,4 @@
     }
 }
 
+/*
