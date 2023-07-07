@@ -25,28 +25,16 @@
         padding-bottom: 20px;
     }
     .tent1{
+        @extend .tent;
         grid-area: tent1; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-items: center;
     }
     .tent2{
+        @extend .tent;
         grid-area: tent2; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-items: center;
     }
     .tent3{
+        @extend .tent;
         grid-area: tent3; 
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-items: center;
     }
 }
 
