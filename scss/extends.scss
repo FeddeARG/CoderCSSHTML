@@ -1,0 +1,14 @@
+
+//extends
+
+.seed {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    border: solid $gray;
+    color: $white;
+    justify-content: end;
+    align-items: center;
+    background-color: $dark;
+    border-radius: 10%;
+}

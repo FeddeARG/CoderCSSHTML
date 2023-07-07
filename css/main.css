@@ -152,6 +152,30 @@ footer .secFooter1 .mPago {
   gap: 20px;
 }
 
+.medPagotarjeta {
+  background-image: url(../img/Iconos/tarjeta.svg);
+  width: 10%;
+  height: 10%;
+}
+
+.medPagoefectivo {
+  background-image: url(../img/Iconos/efectivo.svg);
+  width: 10%;
+  height: 10%;
+}
+
+.medPagotransferencia {
+  background-image: url(../img/Iconos/transferencia.svg);
+  width: 10%;
+  height: 10%;
+}
+
+.medPagocrypto {
+  background-image: url(../img/Iconos/crypto.svg);
+  width: 10%;
+  height: 10%;
+}
+
 .mainIlum {
   display: flex;
   flex-direction: column;
@@ -345,7 +369,7 @@ footer .secFooter1 .mPago {
   .gridSeeds {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "seed1" "seed2" "seed3" "seed4" "seed5" "seed6" "seed7" "seed8";
   }
 }

@@ -40,100 +40,36 @@
         font-size: $textXl;
     }
     .seed1{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed1;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed2{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed2;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed3{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed3;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed4{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed4;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed5{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed5;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed6{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed6;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed7{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed7;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
     .seed8{
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        @extend .seed;
         grid-area: seed8;
-        border: solid $gray;
-        color: $white;
-        justify-content: end;
-        align-items: center;
-        background-color: $dark;
-        border-radius: 10%;
     }
 }
 
