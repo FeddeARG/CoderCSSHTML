@@ -152,30 +152,6 @@ footer .secFooter1 .mPago {
   gap: 20px;
 }
 
-.medPagotarjeta {
-  background-image: url(../img/Iconos/tarjeta.svg);
-  width: 10%;
-  height: 10%;
-}
-
-.medPagoefectivo {
-  background-image: url(../img/Iconos/efectivo.svg);
-  width: 10%;
-  height: 10%;
-}
-
-.medPagotransferencia {
-  background-image: url(../img/Iconos/transferencia.svg);
-  width: 10%;
-  height: 10%;
-}
-
-.medPagocrypto {
-  background-image: url(../img/Iconos/crypto.svg);
-  width: 10%;
-  height: 10%;
-}
-
 .mainIlum {
   display: flex;
   flex-direction: column;
@@ -307,49 +283,34 @@ footer .secFooter1 .mPago {
 }
 .tentGrid .tent1 {
   grid-area: tent1;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: center;
 }
 .tentGrid .tent2 {
   grid-area: tent2;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: center;
 }
 .tentGrid .tent3 {
   grid-area: tent3;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: center;
 }
 
-.tent {
+.tent, .tentGrid .tent1, .tentGrid .tent2, .tentGrid .tent3 {
   text-align: center;
   margin: auto;
 }
-.tent figure {
+.tent figure, .tentGrid .tent1 figure, .tentGrid .tent2 figure, .tentGrid .tent3 figure {
   max-height: 100px;
 }
-.tent img {
+.tent img, .tentGrid .tent1 img, .tentGrid .tent2 img, .tentGrid .tent3 img {
   align-self: center;
   width: 100%;
   object-fit: scale-down;
 }
-.tent figcaption {
+.tent figcaption, .tentGrid .tent1 figcaption, .tentGrid .tent2 figcaption, .tentGrid .tent3 figcaption {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: italic;
   color: #a9a9b6;
   width: 100%;
 }
-.tent figcaption span {
+.tent figcaption span, .tentGrid .tent1 figcaption span, .tentGrid .tent2 figcaption span, .tentGrid .tent3 figcaption span {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -386,100 +347,28 @@ footer .secFooter1 .mPago {
   font-size: 2em;
 }
 .gridSeeds .seed1 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed1;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed2 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed2;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed3 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed3;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed4 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed4;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed5 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed5;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed6 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed6;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed7 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed7;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 .gridSeeds .seed8 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
   grid-area: seed8;
-  border: solid #a9a9b6;
-  color: #f0ffff;
-  justify-content: end;
-  align-items: center;
-  background-color: #292525;
-  border-radius: 10%;
 }
 
 .secContacto {
@@ -509,6 +398,26 @@ footer .secFooter1 .mPago {
 .secContacto .divContacto h2 {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.seed, .gridSeeds .seed1, .gridSeeds .seed2, .gridSeeds .seed3, .gridSeeds .seed4, .gridSeeds .seed5, .gridSeeds .seed6, .gridSeeds .seed7, .gridSeeds .seed8 {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  border: solid #a9a9b6;
+  color: #f0ffff;
+  justify-content: end;
+  align-items: center;
+  background-color: #292525;
+  border-radius: 10%;
+}
+
+.tent, .tentGrid .tent1, .tentGrid .tent2, .tentGrid .tent3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
 }
 
 * {
