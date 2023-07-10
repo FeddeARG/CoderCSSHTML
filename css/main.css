@@ -259,12 +259,39 @@ footer .secFooter1 .mPago {
   letter-spacing: 5px;
 }
 
+.tent, .tentGrid .tent3, .tentGrid .tent2, .tentGrid .tent1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+}
+.tent img, .tentGrid .tent3 img, .tentGrid .tent2 img, .tentGrid .tent1 img {
+  width: 100%;
+  height: 80%;
+}
+.tent figcaption, .tentGrid .tent3 figcaption, .tentGrid .tent2 figcaption, .tentGrid .tent1 figcaption {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #a9a9b6;
+  height: 20%;
+  width: 100%;
+}
+.tent figcaption span, .tentGrid .tent3 figcaption span, .tentGrid .tent2 figcaption span, .tentGrid .tent1 figcaption span {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #f0ffff;
+}
+
 .tentGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "tent1 tent2 tent3";
   width: 80%;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -274,7 +301,7 @@ footer .secFooter1 .mPago {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "tent1" "tent2" "tent3";
-    row-gap: 30px;
+    row-gap: 15px;
     width: 80%;
     align-items: center;
     justify-content: center;
@@ -289,32 +316,6 @@ footer .secFooter1 .mPago {
 }
 .tentGrid .tent3 {
   grid-area: tent3;
-}
-
-.tent, .tentGrid .tent1, .tentGrid .tent2, .tentGrid .tent3 {
-  text-align: center;
-  margin: auto;
-}
-.tent figure, .tentGrid .tent1 figure, .tentGrid .tent2 figure, .tentGrid .tent3 figure {
-  max-height: 100px;
-}
-.tent img, .tentGrid .tent1 img, .tentGrid .tent2 img, .tentGrid .tent3 img {
-  align-self: center;
-  width: 100%;
-  object-fit: scale-down;
-}
-.tent figcaption, .tentGrid .tent1 figcaption, .tentGrid .tent2 figcaption, .tentGrid .tent3 figcaption {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #a9a9b6;
-  width: 100%;
-}
-.tent figcaption span, .tentGrid .tent1 figcaption span, .tentGrid .tent2 figcaption span, .tentGrid .tent3 figcaption span {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  color: #f0ffff;
 }
 
 .gridSeeds {
