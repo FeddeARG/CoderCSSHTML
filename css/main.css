@@ -225,7 +225,7 @@ footer .secFooter1 .mPago {
   color: #f847c6;
   text-shadow: 0 0 10px #f847c6, 0 0 20px #f847c6, 0 0 40px #f847c6, 0 0 80px #f847c6, 0 0 120px #f847c6, 0 0 160px #f847c6;
   background-image: #292525;
-  transition: 0.2s;
+  transition: 0.8s;
   font-size: 1.2em;
   padding: 3vh;
   letter-spacing: 5px;
@@ -239,7 +239,7 @@ footer .secFooter1 .mPago {
   color: #dcde4f;
   text-shadow: 0 0 10px #dcde4f, 0 0 20px #dcde4f, 0 0 40px #dcde4f, 0 0 80px #dcde4f, 0 0 120px #dcde4f, 0 0 160px #dcde4f;
   background-image: #292525;
-  transition: 0.2s;
+  transition: 0.8s;
   font-size: 1.2em;
   padding: 3vh;
   letter-spacing: 5px;
@@ -254,7 +254,7 @@ footer .secFooter1 .mPago {
   text-shadow: 0 0 10px #f0ffff, 0 0 20px #f0ffff, 0 0 40px #f0ffff, 0 0 80px #f0ffff, 0 0 120px #f0ffff, 0 0 160px #f0ffff;
   background-image: #292525;
   font-size: 1.2em;
-  transition: 0.2s;
+  transition: 0.8s;
   padding: 3vh;
   letter-spacing: 5px;
 }
