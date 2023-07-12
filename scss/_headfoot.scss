@@ -29,7 +29,7 @@ header{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         width: 80%;
         height: 30%;
@@ -42,19 +42,31 @@ header{
             height: 1px;
             background-color: $gray;
         }
+        @media(width<600px){
+            flex-direction: column;
+            justify-content: center;
+        }
         .divHorarios{
             display: flex;
             flex-direction: row;
-            justify-content:space-around;
             width: 50%;
             height: 100%;
+            @media(width<600px){
+                flex-direction: column;
+                justify-content: center;
+            }
             .horarios{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                width: 50%;
                 color: $white; 
                 padding: 5px;
                 margin-bottom: 5px;
+                @media(width<600px){
+                    flex-direction: column;
+                    justify-content: center;
+                }
                 p{
                     padding-left: 10px;
                     font-weight: 400;
@@ -65,10 +77,14 @@ header{
             display: flex;
             flex-direction: row; 
             flex-wrap: nowrap;
+            width: 50%;
             justify-content: end;
             color: $white; 
             padding: 5px;
             margin-bottom: 5px;
+            @media(width<600px){
+                justify-content: center;     
+            }
             svg{
                 margin-left: 30px;
                 margin-right: 10px;
