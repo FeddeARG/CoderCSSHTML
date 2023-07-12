@@ -73,7 +73,7 @@
         }
         .txtIlum1{
             grid-area: txtIlum1;
-            transition: 0.8s;
+            transition: 0.4s;
             padding-bottom: 20px;
             &:hover{
                 color: $pink;
@@ -84,15 +84,12 @@
                             0 0 120px $pink,
                             0 0 160px $pink;
                 background-image: $dark;
-                transition: 0.8s;
-                font-size: $textM2;
-                padding: 3vh;
-                letter-spacing: 5px;
+                transition: 0.4s;
             }
         }
         .txtIlum2{
             grid-area: txtIlum2;
-            transition: 0.8s;
+            transition: 0.4s;
             padding-bottom: 20px;
             &:hover{
                 color: $yellow;
@@ -103,15 +100,12 @@
                             0 0 120px $yellow,
                             0 0 160px $yellow;
                 background-image: $dark;
-                transition: 0.8s;
-                font-size: $textM2;
-                padding: 3vh;
-                letter-spacing: 5px;
+                transition: 0.4s;
             }
         }
         .txtIlum3{
             grid-area: txtIlum3;
-            transition: 0.8s;
+            transition: 0.4s;
             padding-bottom: 20px;
             &:hover{
                 color: $white;
@@ -122,10 +116,7 @@
                             0 0 120px $white,
                             0 0 160px $white;
                 background-image: $dark;
-                font-size: $textM2;
-                transition: 0.8s;
-                padding: 3vh;
-                letter-spacing: 5px;
+                transition: 0.4s;
             }
         }
     }

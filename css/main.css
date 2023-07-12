@@ -69,14 +69,14 @@ header .secHeader::after {
 header .secHeader .divHorarios {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 30%;
-  height: 50%;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
 }
 header .secHeader .divHorarios .horarios {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   color: #f0ffff;
   padding: 5px;
   margin-bottom: 5px;
@@ -110,6 +110,7 @@ header .secHeader2 .navbar-toggler {
   border: none;
 }
 header .secHeader2 .navbar-toggler:focus, header .secHeader2 .navbar-toggler:hover {
+  cursor: pointer;
   outline: none;
   box-shadow: none;
 }
@@ -120,7 +121,7 @@ header .secHeader2 .listnav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: fit-content;
+  width: 30%;
   gap: 5px;
 }
 header .secHeader2 .listnav ul a {
@@ -263,45 +264,36 @@ footer .secFooter1 .mPago {
 }
 .mainIlum .divIlum2 .txtIlum1 {
   grid-area: txtIlum1;
-  transition: 0.8s;
+  transition: 0.4s;
   padding-bottom: 20px;
 }
 .mainIlum .divIlum2 .txtIlum1:hover {
   color: #f847c6;
   text-shadow: 0 0 10px #f847c6, 0 0 20px #f847c6, 0 0 40px #f847c6, 0 0 80px #f847c6, 0 0 120px #f847c6, 0 0 160px #f847c6;
   background-image: #292525;
-  transition: 0.8s;
-  font-size: 1.2em;
-  padding: 3vh;
-  letter-spacing: 5px;
+  transition: 0.4s;
 }
 .mainIlum .divIlum2 .txtIlum2 {
   grid-area: txtIlum2;
-  transition: 0.8s;
+  transition: 0.4s;
   padding-bottom: 20px;
 }
 .mainIlum .divIlum2 .txtIlum2:hover {
   color: #dcde4f;
   text-shadow: 0 0 10px #dcde4f, 0 0 20px #dcde4f, 0 0 40px #dcde4f, 0 0 80px #dcde4f, 0 0 120px #dcde4f, 0 0 160px #dcde4f;
   background-image: #292525;
-  transition: 0.8s;
-  font-size: 1.2em;
-  padding: 3vh;
-  letter-spacing: 5px;
+  transition: 0.4s;
 }
 .mainIlum .divIlum2 .txtIlum3 {
   grid-area: txtIlum3;
-  transition: 0.8s;
+  transition: 0.4s;
   padding-bottom: 20px;
 }
 .mainIlum .divIlum2 .txtIlum3:hover {
   color: #f0ffff;
   text-shadow: 0 0 10px #f0ffff, 0 0 20px #f0ffff, 0 0 40px #f0ffff, 0 0 80px #f0ffff, 0 0 120px #f0ffff, 0 0 160px #f0ffff;
   background-image: #292525;
-  font-size: 1.2em;
-  transition: 0.8s;
-  padding: 3vh;
-  letter-spacing: 5px;
+  transition: 0.4s;
 }
 
 .tent, .tentGrid .tent3, .tentGrid .tent2, .tentGrid .tent1 {
