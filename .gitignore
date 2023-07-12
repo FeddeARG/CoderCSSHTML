@@ -3,3 +3,4 @@
 .history
 *.ia 
 *.map
+node_modules/
