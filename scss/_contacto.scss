@@ -6,14 +6,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    align-items: start;
+    width: 80%;
     .divContacto{
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        width: 80%;
+        align-items: center;
+        width: 40%;
         color: $white; 
         padding-top: 10px;
         padding-bottom: 5px;

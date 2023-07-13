@@ -70,17 +70,18 @@ header .secHeader::after {
   header .secHeader {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 header .secHeader .divHorarios {
   display: flex;
   flex-direction: row;
   width: 50%;
-  height: 100%;
 }
 @media (width < 600px) {
   header .secHeader .divHorarios {
     flex-direction: column;
+    width: 100%;
     justify-content: center;
   }
 }
@@ -95,8 +96,9 @@ header .secHeader .divHorarios .horarios {
 }
 @media (width < 600px) {
   header .secHeader .divHorarios .horarios {
-    flex-direction: column;
+    width: 100%;
     justify-content: center;
+    align-items: center;
   }
 }
 header .secHeader .divHorarios .horarios p {
@@ -116,6 +118,7 @@ header .secHeader .divRedes {
 @media (width < 600px) {
   header .secHeader .divRedes {
     justify-content: center;
+    width: 100%;
   }
 }
 header .secHeader .divRedes svg {
@@ -128,7 +131,7 @@ header .secHeader2 {
   color: #f0ffff;
 }
 header .secHeader2 img {
-  width: 25%;
+  width: 50%;
 }
 header .secHeader2 .navbar-toggler {
   border: none;
@@ -437,15 +440,15 @@ footer .secFooter1 .mPago {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: space-around;
+  align-items: start;
+  width: 80%;
 }
 .secContacto .divContacto {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 80%;
+  align-items: center;
+  width: 40%;
   color: #f0ffff;
   padding-top: 10px;
   padding-bottom: 5px;
