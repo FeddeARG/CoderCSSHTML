@@ -101,6 +101,9 @@ header .secHeader .divHorarios .horarios {
     align-items: center;
   }
 }
+header .secHeader .divHorarios .horarios a {
+  color: #f0ffff;
+}
 header .secHeader .divHorarios .horarios p {
   padding-left: 10px;
   font-weight: 400;
