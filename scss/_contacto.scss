@@ -1,25 +1,46 @@
 
 // contacto
 
-
+.titleContact{
+    width: 100%;
+    text-align: center;
+    color: $white;
+    height: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+}
 .secContacto{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     width: 80%;
     .divContacto{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 40%;
         color: $white; 
         padding-top: 10px;
         padding-bottom: 5px;
+        @media(width<1200px){
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;     
+        }
+        @media(width<600px){
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;  
+            padding-bottom: 10px;
+        }
         button{
             text-align: center;
-            width: 10%;
+            width: 20%;
             border-radius: 10%;
             border: none;
             background-color: $gray;
@@ -27,6 +48,20 @@
         h2{
             margin-top: 10px;
             margin-bottom: 5px;
+        }
+        iframe{
+            width: 80%;
+            height: 90%;
+        }
+        .formContact{
+            display: flex;
+            flex-direction: column;
+            input{
+                width: 70%;
+                margin: 10px;
+                align-self: center;
+                border-radius: 10%;
+            }
         }
     }
 }

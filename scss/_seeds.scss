@@ -1,14 +1,20 @@
 
 //Seeds
 
+.titleSeed{
+    width: 100%;
+    text-align: center;
+    color: $white;
+    margin-bottom: 30px;
+}
 .gridSeeds{
     display: grid;
-    row-gap: 20px;
-    column-gap: 50px;
+    row-gap: 10px;
+    column-gap: 10px;
     margin-bottom: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "seed1 seed2"
     "seed3 seed4"
     "seed5 seed6"
@@ -34,10 +40,10 @@
     }
     img{
         object-fit: fill;
-        height: 300px;
+        height: 150px;
     }
     figcaption{
-        font-size: $textXl;
+        font-size: $textM3;
     }
     .seed1{
         @extend .seed;

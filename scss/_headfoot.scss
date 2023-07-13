@@ -72,6 +72,9 @@ header{
                 p{
                     padding-left: 10px;
                     font-weight: 400;
+                    @media(width<600px){
+                        padding-top: 20px;
+                    }
                 }
             }
         }
@@ -124,7 +127,7 @@ header{
                     color: $white;
                     display: block;
                     &:hover{
-                        border-radius: 20%;
+                        border-radius: 5%;
                         animation-name: animaNav;
                         animation-duration: 2s;
                         animation-iteration-count: infinite;
@@ -142,7 +145,7 @@ header{
             }
             .nav-actual{
                 background-color: $bcGreen;
-                border-radius: 20%;
+                border-radius: 5%;
             }
         }   
     }

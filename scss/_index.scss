@@ -1,0 +1,25 @@
+// index
+
+@keyframes animaIndex{
+	0%{color: #a9e0aa;}
+	25%{color: #64dd66;}
+	50%{color: #07ba0a;}
+	75%{color: #64dd66;}
+	100%{color: #a9e0aa;}
+}
+
+.titleIndex{
+    width: 80%;
+    align-self: start;
+    text-align: center;
+    color: $white;
+    span{
+        font-family: $secText;
+        font-weight: $textBdr;
+        font-style: $textIt;
+        color: $white;
+        animation-name: animaIndex;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+}
