@@ -125,7 +125,10 @@ header{
                     font-weight: $textBd;
                     letter-spacing: 1px;
                     color: $white;
+                    padding: 5px;
                     display: block;
+                    margin-top: 5px;
+                    text-decoration: none;
                     &:hover{
                         border-radius: 5%;
                         animation-name: animaNav;

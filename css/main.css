@@ -161,7 +161,10 @@ header .secHeader2 .listnav ul a {
   font-weight: 500;
   letter-spacing: 1px;
   color: #f0ffff;
+  padding: 5px;
   display: block;
+  margin-top: 5px;
+  text-decoration: none;
 }
 header .secHeader2 .listnav ul a:hover {
   border-radius: 5%;
