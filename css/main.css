@@ -265,7 +265,7 @@ footer .secFooter1 .mPago {
   align-items: center;
   width: 100%;
   margin-bottom: 20px;
-  row-gap: 10vh;
+  row-gap: 5vh;
   grid-template-areas: "imgIlum1 txtIlum1" "txtIlum2 imgIlum2" "imgIlum3 txtIlum3";
 }
 .mainIlum .divIlum2 img {
