@@ -42,7 +42,7 @@ header{
             height: 1px;
             background-color: $gray;
         }
-        @media(width<700px){
+        @media(width<860px){
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -51,7 +51,7 @@ header{
             display: flex;
             flex-direction: row;
             width: 50%;
-            @media(width<700px){
+            @media(width<860px){
                 flex-direction: column;
                 width: 100%;
                 justify-content:center;
@@ -64,7 +64,7 @@ header{
                 color: $white; 
                 padding: 5px;
                 margin-bottom: 5px;
-                @media(width<700px){
+                @media(width<860px){
                     width: 100%;
                     justify-content: center;
                     align-items: center;
@@ -75,7 +75,7 @@ header{
                 p{
                     padding-left: 10px;
                     font-weight: 400;
-                    @media(width<700px){
+                    @media(width<860px){
                         padding-top: 20px;
                     }
                 }
@@ -90,7 +90,7 @@ header{
             color: $white; 
             padding: 5px;
             margin-bottom: 5px;
-            @media(width<600px){
+            @media(width<860px){
                 justify-content: center;
                 width: 100%;     
             }
