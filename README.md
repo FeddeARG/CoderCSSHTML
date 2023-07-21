@@ -7,17 +7,17 @@ El sitio Web es el de un growshop especializado.
 El desarrollo de éste proyecto consta de distintas etapas:
 
 Design:
--Vs Code:
-	-HTML5
-	-SASS
-	-CSS
-	-Bs
+- Vs Code:
+	- HTML5
+	- SASS
+	- CSS
+	- Bs
 
 Deployment:
--NodeJs:
-	-Fresco
--Git / GitHub
--Netlify
+- NodeJs:
+	- Fresco
+- Git / GitHub
+- Netlify
 
 
 Se modificó para la entrega final v.1:
@@ -36,4 +36,4 @@ v.2:
 
 v.3: 
 
--Confección final del readme.
+- Confección final del readme.
