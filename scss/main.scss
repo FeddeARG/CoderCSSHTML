@@ -16,7 +16,9 @@
 @import "_contacto";
 @import "_carrito";
 @import "_index";
+@import "_errores";
 @import "_extends";
+
 
 *{
     font-family: $mainText;
@@ -46,3 +48,4 @@ body{
         }
     }
 }
+

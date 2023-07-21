@@ -1,0 +1,63 @@
+// Errores
+
+.bodyError{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/landings/error404.jpg);
+    .txtError {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+        text-align: center;
+        background-color: transparent;
+        h1{
+            font-weight: $textBdr;
+            font-size: $textXl;
+            color: $white;
+            font-style: $textIt;
+            font-family: $mainText;
+        }
+        span{
+            font-style: $textIt;
+            font-family: $secText;
+        }
+        h2{
+            font-size: $textXXL;
+            color: $gray;
+            font-style: $textIt;
+            font-weight: $textBdr;
+        }
+    }
+    .btn404{
+        width: auto;
+        padding: 5px;
+        height: 10%;
+        background-color: transparent;
+        justify-content: center;
+        border-radius: 50px;
+        border: solid 2px;
+        background-color: $dark;
+        animation-name: animaGlow;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        a{
+            text-decoration: none;
+            color: $bcGreen;
+            animation-name: animaIndex;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            font-size: $textM3;
+        }
+        @media(max-width:1024px) and (min-width:320px){
+        width: auto;
+            h2{
+                font-size: $textSm;
+            }
+        }
+    }
+}

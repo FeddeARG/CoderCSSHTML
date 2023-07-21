@@ -176,13 +176,16 @@ header .secHeader2 .listnav ul a:hover {
   animation-iteration-count: infinite;
 }
 header .secHeader2 .listnav .buscador {
-  width: 30%;
+  width: auto;
   border: solid 3px;
 }
 header .secHeader2 .listnav .buscador:focus {
   animation-name: animaGlow;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+}
+header .secHeader2 .listnav .btn-buscador {
+  margin-left: 20px;
 }
 header .secHeader2 .listnav .nav-actual {
   background-color: #2c692b;
@@ -314,7 +317,7 @@ footer .secFooter1 .mPago {
 .mainIlum .divIlum2 .txtIlum1:hover {
   color: #f847c6;
   text-shadow: 0 0 10px #f847c6, 0 0 20px #f847c6, 0 0 40px #f847c6, 0 0 80px #f847c6, 0 0 120px #f847c6, 0 0 160px #f847c6;
-  background-image: #292525;
+  background-image: #2c2828;
   transition: 0.4s;
 }
 .mainIlum .divIlum2 .txtIlum2 {
@@ -325,7 +328,7 @@ footer .secFooter1 .mPago {
 .mainIlum .divIlum2 .txtIlum2:hover {
   color: #dcde4f;
   text-shadow: 0 0 10px #dcde4f, 0 0 20px #dcde4f, 0 0 40px #dcde4f, 0 0 80px #dcde4f, 0 0 120px #dcde4f, 0 0 160px #dcde4f;
-  background-image: #292525;
+  background-image: #2c2828;
   transition: 0.4s;
 }
 .mainIlum .divIlum2 .txtIlum3 {
@@ -336,7 +339,7 @@ footer .secFooter1 .mPago {
 .mainIlum .divIlum2 .txtIlum3:hover {
   color: #f0ffff;
   text-shadow: 0 0 10px #f0ffff, 0 0 20px #f0ffff, 0 0 40px #f0ffff, 0 0 80px #f0ffff, 0 0 120px #f0ffff, 0 0 160px #f0ffff;
-  background-image: #292525;
+  background-image: #2c2828;
   transition: 0.4s;
 }
 
@@ -573,6 +576,70 @@ footer .secFooter1 .mPago {
   animation-iteration-count: infinite;
 }
 
+.bodyError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/landings/error404.jpg);
+}
+.bodyError .txtError {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  background-color: transparent;
+}
+.bodyError .txtError h1 {
+  font-weight: 700;
+  font-size: 2em;
+  color: #f0ffff;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+.bodyError .txtError span {
+  font-style: italic;
+  font-family: "Kanit", sans-serif;
+}
+.bodyError .txtError h2 {
+  font-size: 10em;
+  color: #a9a9b6;
+  font-style: italic;
+  font-weight: 700;
+}
+.bodyError .btn404 {
+  width: auto;
+  padding: 5px;
+  height: 10%;
+  background-color: transparent;
+  justify-content: center;
+  border-radius: 50px;
+  border: solid 2px;
+  background-color: #2c2828;
+  animation-name: animaGlow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.bodyError .btn404 a {
+  text-decoration: none;
+  color: #2c692b;
+  animation-name: animaIndex;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-size: 1.3em;
+}
+@media (max-width: 1024px) and (min-width: 320px) {
+  .bodyError .btn404 {
+    width: auto;
+  }
+  .bodyError .btn404 h2 {
+    font-size: 1em;
+  }
+}
+
 .seed, .gridSeeds .seed1, .gridSeeds .seed2, .gridSeeds .seed3, .gridSeeds .seed4, .gridSeeds .seed5, .gridSeeds .seed6, .gridSeeds .seed7, .gridSeeds .seed8 {
   display: flex;
   flex-direction: column-reverse;
@@ -581,7 +648,7 @@ footer .secFooter1 .mPago {
   color: #f0ffff;
   justify-content: end;
   align-items: center;
-  background-color: #292525;
+  background-color: #2c2828;
   border-radius: 10%;
 }
 

@@ -141,13 +141,16 @@ header{
                 }
             }
             .buscador{
-                width: 30%;
+                width: auto;
                 border: solid 3px;
                 &:focus{
                     animation-name: animaGlow;
                     animation-duration: 10s;
                     animation-iteration-count: infinite;
                 }
+            }
+            .btn-buscador{
+                margin-left: 20px;
             }
             .nav-actual{
                 background-color: $bcGreen;
